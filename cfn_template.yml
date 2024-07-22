@@ -1,0 +1,34 @@
+Resources:
+  Workstation: 
+    Type: AWS::EC2::Instance
+    Properties: 
+      ImageId: "ami-0862be96e41dcbf74"
+      InstanceType: t2.micro
+      KeyName: "ogidikey"
+      Tags:
+        -
+          Key: Name
+          Value: Workstation
+
+  Sever1: 
+    Type: AWS::EC2::Instance
+    Properties: 
+      ImageId: "ami-0862be96e41dcbf74"
+      InstanceType: t2.micro
+      KeyName: "ogidikey"
+      Tags:
+        -
+          Key: Name
+          Value: Server1
+
+  Server2: 
+    Type: AWS::EC2::Instance
+    Properties: 
+      ImageId: "ami-0862be96e41dcbf74"
+      InstanceType: t2.micro
+      KeyName: "ogidikey"
+      Tags:
+        -
+          Key: Name
+          Value: Server2
+
